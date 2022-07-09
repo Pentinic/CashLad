@@ -13,6 +13,10 @@
     <title>@ViewData["Title"] - CashLad</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" type="image/x-icon" href="/images/Logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,6 +35,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+<<<<<<< HEAD
 
                         @if (user != null)
                         {
@@ -48,6 +53,11 @@
                                 </li>
                             </ul>
                         }
+=======
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Your Subscriptions</a>
+                        </li>
+>>>>>>> origin/2
                     </ul>
                 </div>
             </div>
@@ -58,7 +68,7 @@
             @RenderBody()
         </main>
     </div>
-
+    
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - CashLad - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
