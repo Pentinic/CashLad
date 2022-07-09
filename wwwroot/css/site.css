@@ -74,6 +74,10 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+.bg-white .nav-link {
+    color: darkslategrey;
+}
+
 #slogan {
     font-family: 'Comfortaa', cursive;
     font-family: 'Roboto Mono', monospace;
