@@ -23,7 +23,7 @@ namespace CashLad.Data
 
         }
 
-        public DbSet<User> Users;
+        public DbSet<User> User { get; set; }
 
     }
 }
