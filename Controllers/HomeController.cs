@@ -93,6 +93,7 @@ namespace CashLad.Controllers
             };
             _userService.Add(user);
 
+            ViewData.Clear();
 
             return View(model);
         }

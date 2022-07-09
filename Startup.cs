@@ -53,6 +53,7 @@ namespace CashLad
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseBrowserLink();
 
             app.UseAuthorization();
             app.UseSession();

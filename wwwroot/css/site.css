@@ -46,6 +46,10 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+.shaded-shadow-lg {
+    box-shadow: 0 1rem 3rem #bfc5d99c;
+}
+
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
