@@ -1,4 +1,5 @@
 using CashLad.Data;
+using CashLad.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,8 +29,10 @@ namespace CashLad
             services.AddDbContext<DatabaseContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddScoped<IUserService, UserService>();
 
 
+            services.AddSession(s => s.IdleTimeout = TimeSpan.FromMinutes(120));
             services.AddControllersWithViews();
         }
 

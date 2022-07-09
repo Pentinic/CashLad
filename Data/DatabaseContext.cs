@@ -23,5 +23,7 @@ namespace CashLad.Data
 
         }
 
+        public DbSet<User> Users;
+
     }
 }

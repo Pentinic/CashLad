@@ -1,0 +1,21 @@
+﻿@model LoginModel
+
+<form asp-action="Login" asp-controller="Home">
+    <div class="container pt-4">
+        <div class="col">
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" type="password" class="form-control" />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
